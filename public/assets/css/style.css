@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  font-family: Tahoma, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #e5e5e5;
+}
+
+.container {
+  padding: 20px;
+}
+
+.top-bar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 20px;
+}
+
+.card {
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+}
+
+input,
+select,
+textarea {
+  padding: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.primary-btn,
+.secondary-btn {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.primary-btn {
+  background: #bdbdbd;
+}
+
+.secondary-btn {
+  background: #d6d6a9;
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .main-grid {
+    grid-template-columns: 1fr;
+  }
+}
